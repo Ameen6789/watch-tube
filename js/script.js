@@ -459,7 +459,7 @@ function searchqueryretrive(){
                     })
                 }
                 
-                getVideoDetails(videoid,videotitle,channelname,API_KEY2)
+                getVideoDetails(videoid,videotitle,channelname,API_KEY1)
                 nextPageToken=data.nextPageToken || ""
                 isloading=false
 
@@ -468,7 +468,7 @@ function searchqueryretrive(){
     }
 
     function getVideoDetails(videoid,videotitle,channelname,API_KEY){
-        $.get("https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics,liveStreamingDetails&id="+videoid+"&key="+API_KEY2,function(data){
+        $.get("https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics,liveStreamingDetails&id="+videoid+"&key="+API_KEY,function(data){
   
                 var livestreamdetails=data.items[0]
                 var is_livevideo=false

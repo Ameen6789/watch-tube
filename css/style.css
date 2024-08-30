@@ -1,3 +1,5 @@
+
+/* mobile_first */
 body{
     position: relative;
     margin: 0;
@@ -54,6 +56,13 @@ z-index: 10;
 #profile-pic{
     cursor: pointer;
 }
+
+main#video-search-container{
+    
+    margin-right: 0px;
+    padding: 0;
+}
+
 #like-button{
     cursor: pointer;
 }
@@ -128,6 +137,10 @@ iframe{
 main{
     padding-right: 10px;
 }
+
+
+/* desktop */
+
 @media(min-width:700px){
     .app-logo,.app-logo+span{
         display: block;
@@ -186,10 +199,10 @@ main{
         
     }
     
-    #video-search-container{
-        margin-left:0px;
+    main#video-search-container{
+        margin-left:180px;
         margin-right: 0px;
-        padding-right: 0px;
+        padding: 0;
     }
     .yt-video-thumbnail{
         margin-left:0px;
