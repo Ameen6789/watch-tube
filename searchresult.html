@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="searchqueryretrive()">
+    <header class="mt-3">
+        <div class="d-flex  w-100 align-items-center justify-content-center  py-1  fixed-top bg-white">
+            <ul class="me-3 m-0 p-0">
+                <i class="fa-solid fa-bars fa-2xl navbar-button ms-auto" id="navbar-button"></i>
+            </ul>
+            <img src="images/YouTube_play_button_icon.png" class="app-logo" style="width: 40px;height: 25px;" alt=""> <span style="font-weight: 600;" class="ms-2"> Watch-Tube</span>
+
+            <input type="text" class="search-bar ms-auto ps-2" placeholder="search" id="search-bar">
+            <button class="search-bar-button px-3 "><i class="fa-solid fa-magnifying-glass"></i></button>
+            <img src="images/profile.jpg" id="profile-pic" class="rounded-pill ms-auto" width="40px" height="40px" alt="">
+            
+        </div>
+        <nav class="navbar flex-column  justify-content-center bg-white w-auto h-100">
+            <ul class="nav flex-column bg-white w-100 mt-5">
+                <li class="nav-item  bg-white mb-1"><a href="index.html" class="home nav-link text-dark  w-100" onclick="selectedmenu(this)"><img src="images/icons8-home.svg" style="width: 28px;height: 28px;" class="me-3"> Home</a></li>
+                <li class="nav-item  bg-white mb-1"><a href="videocategory.html" class="gaming nav-link text-dark w-100" onclick="selectedmenu(this);videoCategory()" data-categoryid="20"> <img src="images/gamepad.svg" style="width: 28px;height: 28px; " class="me-3">Gaming</a></li>
+                <li class="nav-item  bg-white mb-1"><a href="videocategory.html" class="automobiles nav-link text-dark w-100" onclick="selectedmenu(this);videoCategory()" data-categoryid="2"><img src="images/car.svg" style="width: 28px;height: 28px;" alt="" class="me-3">Automobiles</a></li>
+                <li class="nav-item  bg-white mb-1"><a href="videocategory.html" class="sports nav-link text-dark w-100" onclick="selectedmenu(this);videoCategory()" data-categoryid="17"><img src="images/basketball-ball.svg" style="width: 28px;height: 28px;" alt="" class="me-3">Sports</a></li>
+                <li class="nav-item  bg-white mb-1"><a href="videocategory.html" class="entertainment nav-link text-dark w-100" onclick="selectedmenu(this);videoCategory()" data-categoryid="24"><img src="images/television.svg" style="width: 28px;height: 28px; " class="me-3">Entertainment</a></li>
+                <li class="nav-item  bg-white mb-1"><a href="videocategory.html" class="technology nav-link text-dark w-100" onclick="selectedmenu(this);videoCategory()" data-categoryid="28"><img src="images/technology.svg" style="width: 28px;height: 28px; " class="me-3">Technology</a></li>
+                <li class="nav-item  bg-white mb-1"><a href="videocategory.html" class="blogs nav-link text-dark w-100" onclick="selectedmenu(this);videoCategory()" data-categoryid="22"><img src="images/vlog.svg" style="width: 28px;height: 28px; " class="me-3">Blogs</a></li>
+                <li class="nav-item  bg-white mb-1"><a href="videocategory.html" class="news nav-link text-dark w-100" onclick="selectedmenu(this);videoCategory()" data-categoryid="25"><img src="images/news.svg" style="width: 28px;height: 28px; " class="me-3">News</a></li>                
+            </ul>
+            
+        </nav>
+
+        
+    </header>
+    <main class="mx-3">
+        
+        <div class="row m-0 p-0 mt-5 pt-3 w-auto px-2" id="search-result-div"> 
+            
+        </div>
+        
+        
+    </main>
+    <script type="text/javascript" src="config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+body{
+    position: relative;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header div{
+    padding: 0px 10px;
+}
+.navbar .fa-solid{
+    color: black;
+}
+
+.navbar{
+width: 80px;
+height: 100vh;
+position: absolute;
+z-index: 10;
+}
+.navbar a:hover{
+    background-color: rgba(128, 128, 128, 0.366);
+}
+#search-bar{
+    width: 50%;
+    height: 30px;
+    /* border-color:gray ; */
+    outline:1px solid gray;
+    border: 1px solid gray;
+    border-radius:  20px 0px 0px 20px;
+    
+    
+}
+.search-bar-button{
+    height: 30px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 0px 20px 20px 0px;
+}
+.navbar{
+    display: none;
+}
+#navbar-button{
+    cursor: pointer;
+}
+.app-logo,.app-logo+span{
+    display: none;
+}
+.home-page-container{
+    padding-left: 0px 10px;
+}
+.selected-menu{
+    background-color: rgba(128, 128, 128, 0.366);
+}
+#profile-pic{
+    cursor: pointer;
+}
+#like-button{
+    cursor: pointer;
+}
+#dislike-button{
+    cursor: pointer;
+    
+}
+
+#like-button:hover,#like-button:active{
+    
+   
+    transform: scale(1.1);
+}
+#dislike-button:hover,#dislike-button:active{
+    
+    
+    transform: scale(1.1);
+}
+
+.thumbnail-container{
+    cursor: pointer;
+}
+/* .yt-video{
+    object-fit: fill;
+    width: 100%;
+    border-radius: 5px;
+    aspect-ratio: 100/56;
+} */
+
+
+
+.video-container,.channel-container,.homevideo-container{
+    cursor: pointer;
+
+}
+
+.yt-video-thumbnail{
+    
+    width: 100%;
+   
+    border-radius: 5px;
+    aspect-ratio: 16/9;
+    
+    
+}
+.channel-detail-container{
+    padding-left:10px ;
+    padding-right: 10px;
+}
+#channel-banner{
+    width: 100%;
+    
+    aspect-ratio: 16/8;
+}
+.channel-logo{
+    width: 50px;
+    height: 50px;
+}
+
+
+iframe{
+    border-radius: 10px;
+    width: auto;
+    padding: 0;
+    aspect-ratio: 16/9;
+    
+}
+#video-play-main-container{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+main{
+    padding-right: 10px;
+}
+@media(min-width:700px){
+    .app-logo,.app-logo+span{
+        display: block;
+    }
+}
+@media (min-width:900px) {
+
+    header div{
+        padding: 0px 30px;
+    }
+    .navbar{
+        display: block;
+    }
+    body{
+        position: static;
+    }
+    .navbar{
+        position: fixed;
+    }
+    #navbar-button{
+        display: none;
+    }
+    
+    main{
+        padding-left:220px;
+        padding-right: 30px;
+        
+    }
+    
+    #thumbnail-container{
+        display:flex;
+        padding-left:100px;
+        padding-right: 100px;
+    }
+    #thumbnail-container>div{
+        width: 50%;
+    }
+    .channel-detail-container{
+        padding-left:50px ;
+        padding-right: 50px;
+    }
+    .yt-video-container{
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    #video-play-main-container{
+        padding-right: 30px;
+        padding-left: 200px;
+    }
+    iframe{
+        border-radius: 10px;
+        width: auto;
+        padding: 0;
+        aspect-ratio: 16/7.5;
+        
+        
+    }
+}
